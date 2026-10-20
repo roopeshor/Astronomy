@@ -43,6 +43,15 @@
 	let MoonScalar = 1;
 	let AstScalar = 1e3;
 	let O = {x: 0, y: 0}
+	/**
+	* r: radius,
+	* d: diameter,
+	* a: semi-major axis,
+	* op: orbital period,
+	* i: inclination,
+	* e: eccentricity
+	*/
+	
 	let sun = {  ...O, d: 1391400, fill: "#ff0" };
 	let planets = {
 		mercury: { ...O, d: 4879,  a:  57.894e6, op: 87.969   ,e: 0.2056, i: 7.005, fill: "#fbc", },
