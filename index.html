@@ -12,6 +12,7 @@
 </style>
 <canvas></canvas>
 <script>
+	alert("press 't' to focus on one thing");
 	let cvs = document.querySelector("canvas");
 	cvs.style.width = window.innerWidth + "px";
 	cvs.style.height = window.innerHeight + "px";
@@ -588,7 +589,6 @@
 		"0": "mercury",
 		"1": "venus",
 		"2": "earth",
-		"m": "moon",
 		"3": "mars",
 		"4": "jupiter",
 		"5": "saturn",
@@ -614,8 +614,8 @@
 			ctx.font = "20px sans";
 			ctx.fillStyle = "#fff";
 			ctx.textAlign = "center";
-			ctx.fillText(`0:mercury   1:venus   2:earth   m:moon`, cvs.width / 2, 20)
-			ctx.fillText(`3:mars  4:jupiter  5:saturn  6:uranus  7:neptune`, cvs.width / 2, 45);
+			ctx.fillText(`0:mercury   1:venus   2:earth   3:mars`, cvs.width / 2, 20)
+			ctx.fillText(`4:jupiter  5:saturn  6:uranus  7:neptune`, cvs.width / 2, 45);
 			ctx.fill();
 		}
 		ctx.translate(cvs.width / 2, cvs.height / 2)
